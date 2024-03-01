@@ -12,7 +12,8 @@
         padding: 0;
     }
     .container {
-        max-width: 100%; /* Adjusted for mobile screens */
+        max-width: 600px;
+        margin: 50px auto;
         padding: 20px;
         border-radius: 10px;
         background-color: #fff;
@@ -28,21 +29,22 @@
         margin-bottom: 10px;
         color: #666;
     }
-    input, select {
-        width: 100%; /* Adjusted for mobile screens */
-        padding: 10px;
+    input, select, button {
+        width: 100%;
+        padding: 12px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
     }
     button {
-        width: 100%;
-        padding: 10px;
         background-color: #007bff;
         color: #fff;
-        border: none;
-        border-radius: 5px;
         cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
     }
     #result {
         margin-top: 20px;
@@ -69,9 +71,6 @@
     @media only screen and (max-width: 600px) {
         .container {
             padding: 10px;
-        }
-        input, select {
-            width: calc(100% - 22px);
         }
     }
 </style>
