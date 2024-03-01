@@ -71,6 +71,10 @@
     @media only screen and (max-width: 600px) {
         .container {
             padding: 10px;
+            max-width: 100%;
+        }
+        input, select, button {
+            font-size: 14px;
         }
     }
 </style>
