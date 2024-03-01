@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -11,8 +12,7 @@
         padding: 0;
     }
     .container {
-        max-width: 600px;
-        margin: 50px auto;
+        max-width: 100%; /* Adjusted for mobile screens */
         padding: 20px;
         border-radius: 10px;
         background-color: #fff;
@@ -29,15 +29,11 @@
         color: #666;
     }
     input, select {
-        width: calc(100% - 22px);
+        width: 100%; /* Adjusted for mobile screens */
         padding: 10px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
-    }
-    input:focus, select:focus {
-        outline: none;
-        border-color: #007bff;
     }
     button {
         width: 100%;
@@ -47,9 +43,6 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-    }
-    button:hover {
-        background-color: #0056b3;
     }
     #result {
         margin-top: 20px;
@@ -70,6 +63,16 @@
     .error {
         color: #ff0000;
         margin-top: 5px;
+    }
+
+    /* Media query for mobile screens */
+    @media only screen and (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+        input, select {
+            width: calc(100% - 22px);
+        }
     }
 </style>
 </head>
